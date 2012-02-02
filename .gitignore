@@ -11,7 +11,7 @@
 *.dll
 *.lib
 *.exp
-config.*
+#config.*
 doc/*.1
 doc/*.html
 doc/*.pod
@@ -54,3 +54,4 @@ tools/probetest
 tools/qt-faststart
 tools/trasher
 version.h
+build/
