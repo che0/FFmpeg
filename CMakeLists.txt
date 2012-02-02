@@ -9,3 +9,4 @@ set(CMAKE_C_FLAGS "-D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -
 add_subdirectory(libavutil)
 add_subdirectory(libavcodec)
 add_subdirectory(libavformat)
+add_subdirectory(writer)
