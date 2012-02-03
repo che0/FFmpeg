@@ -118,6 +118,7 @@ void avcodec_init(void)
         return;
     initialized = 1;
 
+    // removed in avformat-big patchset
     //dsputil_static_init();
 }
 

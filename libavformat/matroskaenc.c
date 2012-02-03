@@ -471,8 +471,10 @@ static int mkv_write_codecprivate(AVFormatContext *s, AVIOContext *pb, AVCodecCo
     if (native_id) {
         if (codec->codec_id == CODEC_ID_VORBIS || codec->codec_id == CODEC_ID_THEORA)
             ret = put_xiph_codecpriv(s, dyn_cp, codec);
+        /* removed in avformat-big patchset
         else if (codec->codec_id == CODEC_ID_FLAC)
             ret = ff_flac_write_header(dyn_cp, codec, 1);
+        */
         else if (codec->codec_id == CODEC_ID_H264)
             ret = ff_isom_write_avcc(dyn_cp, codec->extradata, codec->extradata_size);
         else if (codec->extradata_size)
